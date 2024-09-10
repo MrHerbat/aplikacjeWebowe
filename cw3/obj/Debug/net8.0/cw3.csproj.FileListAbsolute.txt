@@ -1,0 +1,14 @@
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\bin\Debug\net8.0\cw3.exe
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\bin\Debug\net8.0\cw3.deps.json
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\bin\Debug\net8.0\cw3.runtimeconfig.json
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\bin\Debug\net8.0\cw3.dll
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\bin\Debug\net8.0\cw3.pdb
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.AssemblyInfoInputs.cache
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.AssemblyInfo.cs
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.csproj.CoreCompileInputs.cache
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.dll
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\refint\cw3.dll
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.pdb
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\cw3.genruntimeconfig.cache
+C:\Users\Egzamin\Desktop\aplikacjeWebowe-master\cw3\obj\Debug\net8.0\ref\cw3.dll
