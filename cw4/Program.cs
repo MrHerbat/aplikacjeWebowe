@@ -17,6 +17,9 @@ Console.WriteLine(GetMax(tab2)-GetMin(tab2));
 Console.WriteLine(GetSum(tab2));
 Console.WriteLine(GetAvg(tab2));
 
+var tab3 = GenerDivBy(10,6);
+ShowTable(tab3);
+
 
 
 
@@ -78,4 +81,16 @@ float GetAvg(int[] tab)
     int size = tab.Length;
     float avg = sum/size;
     return avg;
+}
+int[] GenerDivBy(int size, int div)
+{
+    Random rnd = new Random();
+    int tabSize = size;
+    int[] result = new int[tabSize];
+    int rand;
+    for (int i = 0; i < tabSize; i++)
+    {
+        result[i] = rnd.Next(100)*div;
+    }
+    return result;
 }
