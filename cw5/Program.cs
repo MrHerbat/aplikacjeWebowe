@@ -4,18 +4,23 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 app.UseStaticFiles();
-app.MapGet("/", () => "Hello World!");
-app.MapGet("/strona1", () => "Strona 1");
-app.MapGet("/strona2", () => GetPeople());
+// app.MapGet("/", () => "Hello World!");
+// app.MapGet("/games", () => GamesRepo.GetGames());
+// app.MapGet("/strona1", () => "Strona 1");
+// app.MapGet("/strona2", () => GetPersons());
 
 app.Run();
 
 
-List<Person> GetPeople()
+static List<Person> GetPersons()
 {
-    var list = new List<>();
-    list.Add(new Person { FirstName = "Jan", LastName = "Kowalski", Age = 20 });
-    list.Add(new Person { FirstName = "Damian", LastName = "Jabłko", Age = 14 });
-    list.Add(new Person { FirstName = "Nikolai", LastName = "Romanov", Age = 156 });
-    return list;
+    return new List<Person>
+    {
+        new Person{FirstName="Tomasz",LastName="Rączka",Age=15},
+        new Person{FirstName="Jakub",LastName="Mueller",Age=16},
+        new Person{FirstName="Karolinka",LastName="Mueller",Age=16},
+        new Person{FirstName="Chris",LastName="Armatys",Age=17},
+        new Person{FirstName="Anastazja",LastName="Matys",Age=17},
+        new Person{FirstName="Mateusz",LastName="Tokaszewicz",Age=17}
+    };
 }
