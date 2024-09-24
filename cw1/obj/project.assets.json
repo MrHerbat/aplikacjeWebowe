@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Egzamin\\Desktop\\temp\\cw1\\cw1.csproj",
+      "projectUniqueName": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw1\\cw1.csproj",
       "projectName": "cw1",
-      "projectPath": "C:\\Users\\Egzamin\\Desktop\\temp\\cw1\\cw1.csproj",
+      "projectPath": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw1\\cw1.csproj",
       "packagesPath": "C:\\Users\\Egzamin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Egzamin\\Desktop\\temp\\cw1\\obj\\",
+      "outputPath": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Egzamin\\AppData\\Roaming\\NuGet\\NuGet.Config"
