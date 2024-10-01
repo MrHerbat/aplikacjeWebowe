@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "EnbRNoDFXD3St24u0lmg7r1DYersIlMyl2KpEBtUNHs=",
+  "Source": "cw6",
+  "BasePath": "_content/cw6",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "cw6\\wwwroot",
+      "Source": "cw6",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\",
+      "BasePath": "_content/cw6",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\index.css",
+      "SourceId": "cw6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\",
+      "BasePath": "_content/cw6",
+      "RelativePath": "index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.css"
+    },
+    {
+      "Identity": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\index.html",
+      "SourceId": "cw6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\",
+      "BasePath": "_content/cw6",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\index.js",
+      "SourceId": "cw6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw6\\wwwroot\\",
+      "BasePath": "_content/cw6",
+      "RelativePath": "index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.js"
+    }
+  ]
+}
