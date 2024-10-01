@@ -4,6 +4,13 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 app.UseStaticFiles();
+var p = new Person { 
+    FirstName = "Jan", 
+    LastName = "Kowalski", 
+    Age = 20 
+};
+
+app.MapRazorPages();
 // app.MapGet("/", () => "Hello World!");
 // app.MapGet("/games", () => GamesRepo.GetGames());
 // app.MapGet("/strona1", () => "Strona 1");
