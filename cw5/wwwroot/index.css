@@ -1,4 +1,7 @@
 #root{
-    color: aqua;
+    color: darkblue;
     height: 50px;
+}
+body{
+    background-color: lightcoral;
 }
