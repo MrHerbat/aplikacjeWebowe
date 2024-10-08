@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "Title": "The Witcher 3: Wild Hunt",
+    "Studio": "CD Projekt Red",
+    "ReleaseDate": "2015-05-19",
+    "Genre": "RPG",
+    "Price": 29.99
+  },
+  {
+    "Id": 2,
+    "Title": "Cyberpunk 2077",
+    "Studio": "CD Projekt Red",
+    "ReleaseDate": "2020-12-10",
+    "Genre": "RPG",
+    "Price": 59.99
+  },
+  {
+    "Id": 3,
+    "Title": "Red Dead Redemption 2",
+    "Studio": "Rockstar Games",
+    "ReleaseDate": "2018-10-26",
+    "Genre": "Action",
+    "Price": 39.99
+  },
+  {
+    "Id": 4,
+    "Title": "God of War",
+    "Studio": "Santa Monica Studio",
+    "ReleaseDate": "2018-04-20",
+    "Genre": "Action",
+    "Price": 49.99
+  },
+  {
+    "Id": 5,
+    "Title": "The Legend of Zelda: Breath of the Wild",
+    "Studio": "Nintendo",
+    "ReleaseDate": "2017-03-03",
+    "Genre": "Adventure",
+    "Price": 59.99
+  },
+  {
+    "Id": 6,
+    "Title": "Horizon Zero Dawn",
+    "Studio": "Guerrilla Games",
+    "ReleaseDate": "2017-02-28",
+    "Genre": "Action",
+    "Price": 29.99
+  },
+  {
+    "Id": 7,
+    "Title": "Dark Souls III",
+    "Studio": "FromSoftware",
+    "ReleaseDate": "2016-04-12",
+    "Genre": "RPG",
+    "Price": 49.99
+  },
+  {
+    "Id": 8,
+    "Title": "Sekiro: Shadows Die Twice",
+    "Studio": "FromSoftware",
+    "ReleaseDate": "2019-03-22",
+    "Genre": "Action",
+    "Price": 59.99
+  },
+  {
+    "Id": 9,
+    "Title": "Assassin's Creed Valhalla",
+    "Studio": "Ubisoft",
+    "ReleaseDate": "2020-11-10",
+    "Genre": "Action",
+    "Price": 59.99
+  },
+  {
+    "Id": 10,
+    "Title": "Ghost of Tsushima",
+    "Studio": "Sucker Punch Productions",
+    "ReleaseDate": "2020-07-17",
+    "Genre": "Action",
+    "Price": 59.99
+  }
+]
