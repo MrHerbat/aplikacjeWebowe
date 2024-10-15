@@ -7,10 +7,12 @@ namespace cw7.Pages
     public class AddMovieModel : PageModel
     {
         [BindProperty]
-        public Movie? Movie { get; set; }
-        
+        public Movie? MyMovie { get; set; }
         public void OnGet()
         {
+        }
+        public void OnPost(){
+            
         }
     }
 }
