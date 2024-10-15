@@ -11,7 +11,8 @@
 </head>
 <body>
 <h1>RAZOR FILMY</h1>
-<a asp-page="Games">Filmy</a>
+<a asp-page="Games">Gry</a>
+<a asp-page="Index">Dodawanie Filmów</a>
 <table class="table table-striped">
     <thead>
         <tr>  
@@ -25,10 +26,13 @@
     
     </thead>
     <tbody>
-    @(int lp = 0;)
+
+    @{
+        int lp = 0;
+    }
     @foreach(var movie in Model.Movies)
     {
-        @lp++;
+        lp++;
         <tr>
             <td>@(lp)</td>
             <td>@movie.Title</td>
