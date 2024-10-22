@@ -11,8 +11,8 @@
 </head>
 <body>
 <h1>RAZOR FILMY</h1>
-<a asp-page="AddMovie.cshtml">Dodawanie Filmów</a>
-<a asp-page="Games.cshtml">Gry</a>
+<a asp-page="Games" class="btn">Gry</a>
+<a asp-page="AddMovie" class="btn">Dodaj film</a>
 <table class="table table-striped">
     <thead>
         <tr>  
@@ -22,6 +22,7 @@
             <th>Release Date</th>
             <th>Genre</th>
             <th>Price</th> 
+            <th>Operations</th>
         </tr>
     
     </thead>
@@ -40,6 +41,8 @@
             <td>@movie.ReleaseDate</td>
             <td>@movie.Genre</td>
             <td>@movie.Price</td>
+            
+            
         </tr>
     }
     </tbody>
