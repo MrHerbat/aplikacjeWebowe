@@ -41,7 +41,10 @@
             <td>@movie.ReleaseDate</td>
             <td>@movie.Genre</td>
             <td>@movie.Price</td>
-            
+            <td>
+                <a class="btn btn-danger" asp-page="DeleteMovie" asp-route-id="@movie.Id">Usuń</a>
+                <a class="btn btn-secondary" asp-page="EditMovie" asp-route-id="@movie.Id">Edytuj</a>
+            </td>
             
         </tr>
     }

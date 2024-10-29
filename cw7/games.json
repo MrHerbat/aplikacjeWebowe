@@ -52,7 +52,7 @@
     "Title": "Dark Souls III",
     "Studio": "FromSoftware",
     "ReleaseDate": "2016-04-12",
-    "Genre": "RPG",
+    "Genre": "Soulslike",
     "Price": 49.99
   },
   {
@@ -60,7 +60,7 @@
     "Title": "Sekiro: Shadows Die Twice",
     "Studio": "FromSoftware",
     "ReleaseDate": "2019-03-22",
-    "Genre": "Action",
+    "Genre": "Soulslike",
     "Price": 59.99
   },
   {

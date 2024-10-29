@@ -18,6 +18,29 @@ public class GamesRepo
     {
         get { return _games; }
     }
+    private void SaveChanges()
+    {
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+        string content = JsonSerializer.Serialize(_games, options);
+        File.WriteAllText(_filePath, content);
+    }
+    private int GetNextId() //autoincrement
+    {
+        return _movies != null ? _movies.Max(m => m.Id) + 1 : 1;
+    }
+    public void AddGame(Game game)
+    {
+        if (_games == null)
+        {
+            _games = new List<Game>();
+        }
+        game.Id = GetNextId();
+        _games.Add(game);
+        SaveChanges();
+    }
 
 
 
