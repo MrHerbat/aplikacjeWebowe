@@ -37,6 +37,10 @@
             <td>@games.ReleaseDate</td>
             <td>@games.Genre</td>
             <td>@games.Price</td>
+            <td>
+                <a class="btn btn-danger" asp-page="DeleteGame" asp-route-id="@games.Id">Usuń</a>
+                <a class="btn btn-secondary" asp-page="EditGame" asp-route-id="@games.Id">Edytuj</a>
+            </td>
         </tr>
     }
     </tbody>

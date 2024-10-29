@@ -29,7 +29,7 @@ public class GamesRepo
     }
     private int GetNextId() //autoincrement
     {
-        return _movies != null ? _movies.Max(m => m.Id) + 1 : 1;
+        return _games != null ? _games.Max(m => m.Id) + 1 : 1;
     }
     public void AddGame(Game game)
     {

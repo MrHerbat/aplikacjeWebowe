@@ -1,20 +1,22 @@
+using cw7.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace cw7.Pages;
+namespace cw7.Pages
 {
     public class DeleteMovieModel : PageModel
     {
-        public void OnGet(int? id)
+        private MoviesRepo _repo = new MoviesRepo();
+        public IActionResult OnGet(int? id)
         {
-            if (id == null)
+            if (id != null)
             {
-                ViewData["Message"] = "Brak danych";
+                Movie? movie = _repo.GetById(id);
+                if (movie != null)
+                    _repo.DeleteMovie(movie);
             }
-            else
-            {
-                ViewData["Message"] = "Usuwanie filmu o id " + id;
-            }
+
+            return RedirectToPage("Index");
         }
     }
 }

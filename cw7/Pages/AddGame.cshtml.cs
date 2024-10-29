@@ -33,7 +33,7 @@ namespace cw7.Pages
             {
                 // Add movie to database
                 GamesRepo repo = new GamesRepo("games.json");
-                repo.AddGame(MyMovie);
+                repo.AddGame(MyGame);
                 ViewData["Message"] = "Gra dodana";
                 return RedirectToPage("Index");
             }

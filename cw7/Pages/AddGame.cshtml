@@ -12,29 +12,29 @@
     <h1>Dodaj nowy film</h1>
     <form asp-page="AddMovie" method="post">
         <div class="row m-3">
-            <label class="col-3 text-end" asp-for="@Model.MyMovie.Title"></label>
-            <input class="col-6" asp-for="@Model.MyMovie.Title" />
-            <span asp-validation-for="@Model.MyMovie.Title" class="text-danger col-3"></span>
+            <label class="col-3 text-end" asp-for="@Model.MyGame.Title"></label>
+            <input class="col-6" asp-for="@Model.MyGame.Title" />
+            <span asp-validation-for="@Model.MyGame.Title" class="text-danger col-3"></span>
         </div>
         <div class="row m-3">
-            <label class="col-3 text-end" asp-for="@Model.MyMovie.Director"></label>
-            <input class="col-6" asp-for="@Model.MyMovie.Director" />
-            <span asp-validation-for="@Model.MyMovie.Director" class="text-danger col-3"></span>
+            <label class="col-3 text-end" asp-for="@Model.MyGame.Studio"></label>
+            <input class="col-6" asp-for="@Model.MyGame.Studio" />
+            <span asp-validation-for="@Model.MyGame.Studio" class="text-danger col-3"></span>
         </div>
         <div class="row m-3">
-            <label class="col-3 text-end" asp-for="@Model.MyMovie.ReleaseDate"></label>
-            <input type="date" class="col-6" asp-for="@Model.MyMovie.ReleaseDate" />
-            <span asp-validation-for="@Model.MyMovie.ReleaseDate" class="text-danger col-3"></span>
+            <label class="col-3 text-end" asp-for="@Model.MyGame.ReleaseDate"></label>
+            <input type="date" class="col-6" asp-for="@Model.MyGame.ReleaseDate" />
+            <span asp-validation-for="@Model.MyGame.ReleaseDate" class="text-danger col-3"></span>
         </div>
         <div class="row m-3">
-            <label class="col-3 text-end" asp-for="@Model.MyMovie.Price"></label>
-            <input type="number" class="col-6" asp-for="@Model.MyMovie.Price" step="0.01" />
-            <span asp-validation-for="@Model.MyMovie.Price" class="text-danger col-3"></span>
+            <label class="col-3 text-end" asp-for="@Model.MyGame.Price"></label>
+            <input type="number" class="col-6" asp-for="@Model.MyGame.Price" step="0.01" />
+            <span asp-validation-for="@Model.MyGame.Price" class="text-danger col-3"></span>
         </div>
 
         <div class="row m-3">
-            <label class="col-3 text-end" asp-for="@Model.MyMovie.Genre"></label>
-            <select class="col-6" asp-for="@Model.MyMovie.Genre" >
+            <label class="col-3 text-end" asp-for="@Model.MyGame.Genre"></label>
+            <select class="col-6" asp-for="@Model.MyGame.Genre" >
                 @foreach(var genre in ViewData["Genres"] as List<string>)
                 {
                     <option value="@genre">@genre</option>
