@@ -23,6 +23,7 @@ namespace cw7.Pages
 
         public void OnGet(int id)
         {
+
             ViewData["Genres"] = Genres;
             var movieToEdit = _repo.GetById(id);
             if (movieToEdit != null)
@@ -30,16 +31,15 @@ namespace cw7.Pages
                 MyMovie = movieToEdit;
             }
         }
-
-        public IActionResult OnPost()
-        {
-            if (ModelState.IsValid)
-            {
+        public IActionResult OnPost(){
+            if(ModelState.IsValid){
                 var movie = MyMovie;
+                //TODO zapisywanie do pliku
+                _repo.UpdateMovie(movie);
                 return RedirectToPage("Index");
             }
-
             return Page();
+            
         }
     }
 }

@@ -65,7 +65,7 @@
   },
   {
     "Id": 9,
-    "Title": "Assassin's Creed Valhalla",
+    "Title": "Assassin\u0027s Creed Valhalla",
     "Studio": "Ubisoft",
     "ReleaseDate": "2020-11-10",
     "Genre": "Action",
@@ -78,5 +78,21 @@
     "ReleaseDate": "2020-07-17",
     "Genre": "Action",
     "Price": 59.99
+  },
+  {
+    "Id": 11,
+    "Title": "Cyberpunk2077",
+    "Studio": "CD Projekt Red",
+    "ReleaseDate": "2020-12-10",
+    "Genre": "RPG",
+    "Price": 29.99
+  },
+  {
+    "Id": 12,
+    "Title": "ziemniak simulator",
+    "Studio": "teapot",
+    "ReleaseDate": "2025-10-24",
+    "Genre": "Soulslike",
+    "Price": 1.5
   }
 ]

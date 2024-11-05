@@ -35,7 +35,7 @@ namespace cw7.Pages
                 GamesRepo repo = new GamesRepo("games.json");
                 repo.AddGame(MyGame);
                 ViewData["Message"] = "Gra dodana";
-                return RedirectToPage("Index");
+                return RedirectToPage("Games");
             }
             else
             {
