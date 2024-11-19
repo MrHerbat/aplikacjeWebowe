@@ -1,0 +1,22 @@
+@page
+@model cw8.Pages.PrimeModel
+<h1>Strona Index</h1>
+<form method="post">
+    <label asp-for="@Model.Count">Ile wyszukać liczb pierwszych?</label>
+    <input asp-for="@Model.Count" type="number" min="0" value="0"/>
+    <div>
+        <input type="submit" value="Dodaj"/>
+    </div>
+</form>
+<div>
+    @ViewData["Message"]
+    @if (@Model.Numbers != null)
+    {
+        <div>Oto pierwsze @Model.Count liczb pierwszych</div>
+        
+        @foreach (var value in @Model.Numbers as List<int>)
+        {
+            <span>@value | </span>
+        }
+    }
+</div>

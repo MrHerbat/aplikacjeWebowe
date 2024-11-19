@@ -19,7 +19,6 @@ namespace cw7.Pages
         public void OnGet()
         {
             ViewData["Genres"] = Genres;
-            ViewData["Message"] = "Dopiero wywitlamy formularz";
         }
         public IActionResult OnPost()
         {
