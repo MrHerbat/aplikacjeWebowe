@@ -15,3 +15,25 @@ nav a{
     text-decoration: none;
     color: #803131;
 }
+.redBg{
+    background: red;
+}
+.grayBg{
+    color: gray;
+    background: gray;
+    border: gray 1px solid;
+}   
+.tborder{
+    border: black 1px solid;
+}
+td,tr,table{
+    margin: 0;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    padding: 5px;
+}
+table{
+    padding: 0;
+}

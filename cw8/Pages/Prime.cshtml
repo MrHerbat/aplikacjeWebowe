@@ -13,10 +13,49 @@
     @if (@Model.Numbers != null)
     {
         <div>Oto pierwsze @Model.Count liczb pierwszych</div>
-        
-        @foreach (var value in @Model.Numbers as List<int>)
+        var n = @Model.Numbers[Model.Numbers.Count - 1];
+        var x = 0;
+        var r = n % 30;
+        while (n%30!=0)
         {
-            <span>@value | </span>
+            n++;
         }
+        <span> @r |</span>
+        foreach (var value in @Model.Numbers as List<int>)
+        {
+            <span> @value |</span>
+        }
+        <br/>
+        <table>
+            @for (int i = 1; i <= n; i++)
+            {
+                if ((i - 1) % 30 == 0)
+                {
+                    <tr></tr>
+                }
+
+                if (x < @Model.Numbers.Count)
+                {
+                    if (i == @Model.Numbers[x])
+                    {
+                        <td class="redBg tborder"> @i </td>
+                        x++;
+                    }
+                    else
+                    {
+                        <td class="tborder"> @i </td>
+                    }
+                }
+                else
+                {
+                    <td class="grayBg"> @i </td>
+                }
+                
+                
+
+            }
+
+
+        </table>
     }
 </div>
