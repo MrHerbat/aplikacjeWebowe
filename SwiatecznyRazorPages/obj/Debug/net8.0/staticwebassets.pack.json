@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\student\\Documents\\aplikacjeWebowe\\SwiatecznyRazorPages\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SwiatecznyRazorPages.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SwiatecznyRazorPages.props",
+      "PackagePath": "build\\SwiatecznyRazorPages.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SwiatecznyRazorPages.props",
+      "PackagePath": "buildMultiTargeting\\SwiatecznyRazorPages.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SwiatecznyRazorPages.props",
+      "PackagePath": "buildTransitive\\SwiatecznyRazorPages.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a asp-page="Index">
+                        <button class="menuButton">
+                            Strona Główna
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a asp-page="History">
+                        <button class="menuButton">
+                            Historia Świąt
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a asp-page="Recipes">
+                        <button class="menuButton">
+                            Przepisy
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a asp-page="Songs">
+                        <button class="menuButton">
+                            Kolędy
+                        </button>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        Wykonano &copy; 2024
+    </footer>
+</div>
+</body>
+</html>
