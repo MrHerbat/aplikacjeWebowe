@@ -1,23 +1,23 @@
-using cw10_layout.Models;
+﻿using cw10_layout.Models;
 using cw10_layout.Models.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace cw10_layout.Controllers
 {
-    public class StudentsController : Controller
+    public class GamesController : Controller
     {
-        private readonly IStudentRepo _studentRepo;
+        private readonly IGameRepo _gamesRepo;
         private readonly string? _connectionString;
-        public StudentsController(IConfiguration configuration)
+        public GamesController(IConfiguration configuration)
         {
             //_studentRepo = new FakeStudentRepo();
             _connectionString = configuration.GetConnectionString("mysql");
-            _studentRepo = new MySqlStudentRepo(_connectionString);
+            _gamesRepo = new MySqlGameRepo(_connectionString);
         }
         // GET: StudentsController
         public ActionResult List()
         {
-            return View(_studentRepo.GetAllStudents());
+            return View(_gamesRepo.GetAllGames());
         }
 
         [HttpGet]
@@ -27,10 +27,10 @@ namespace cw10_layout.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(MyStudent student)
+        public IActionResult Create(MyGame game)
         {
             if(ModelState.IsValid){
-                _studentRepo.AddStudent(student);
+                _gamesRepo.AddGame(game);
                 return RedirectToAction("List");
             }
             return View();
@@ -40,7 +40,7 @@ namespace cw10_layout.Controllers
         {
             if (id != null)
             {
-                _studentRepo.DeleteStudent(id.Value);
+                _gamesRepo.DeleteGame(id.Value);
             }
             return View();
         }
