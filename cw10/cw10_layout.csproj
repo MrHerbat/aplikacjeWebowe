@@ -10,4 +10,10 @@
     <PackageReference Include="MySql.Data" Version="9.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Games\AddGame.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Games\GameList.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Games\UpdateGame.cshtml" />
+  </ItemGroup>
+
 </Project>

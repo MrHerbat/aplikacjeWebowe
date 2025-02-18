@@ -1,0 +1,32 @@
+﻿@model List<cw11_layout.Models.MyGame>
+<h1>Lista Gier</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Lp</th>
+        <th>Tytuł</th>
+        <th>Gatunek</th>
+        <th>Cena</th>
+        <th>Inne</th>
+    </tr>
+    </thead>
+    <tbody>
+    @{int lp = 0;}
+    @foreach(var game in Model)
+    {
+        lp++;
+        <tr>
+            <td>@lp</td>
+            <td>@game.Title</td>
+            <td>@game.Genre</td>
+            <td>@game.Studio</td>
+            <td>@game.Price</td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@game.Id" class="btn btn-danger">X</a>
+                <a asp-action="UpdateGame" asp-route-id="@game.Id" class="btn btn-primary">Edit</a>
+            </td>
+        </tr>
+
+    }
+    </tbody>
+</table>

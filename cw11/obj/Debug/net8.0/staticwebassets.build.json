@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "iaBT/ugj3i9GG/68FyvQ9A/Fpg73+E+cdKGmzHZNnx0=",
+  "Source": "cw11",
+  "BasePath": "_content/cw11",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "cw11\\wwwroot",
+      "Source": "cw11",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\wwwroot\\",
+      "BasePath": "_content/cw11",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\obj\\Debug\\net8.0\\scopedcss\\bundle\\cw11.styles.css",
+      "SourceId": "cw11",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/cw11",
+      "RelativePath": "cw11.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\obj\\Debug\\net8.0\\scopedcss\\bundle\\cw11.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\cw11.bundle.scp.css",
+      "SourceId": "cw11",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/cw11",
+      "RelativePath": "cw11.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\cw11.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\wwwroot\\site.css",
+      "SourceId": "cw11",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Egzamin\\Documents\\aplikacjeWebowe\\cw11\\wwwroot\\",
+      "BasePath": "_content/cw11",
+      "RelativePath": "site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.css"
+    }
+  ]
+}

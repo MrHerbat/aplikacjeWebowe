@@ -41,6 +41,7 @@ namespace cw10_layout.Controllers
             if (id != null)
             {
                 _studentRepo.DeleteStudent(id.Value);
+                return RedirectToAction("List");
             }
             return View();
         }
