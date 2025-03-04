@@ -46,13 +46,14 @@ namespace cw11_layout.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult UpdateGame()
+        public IActionResult UpdateGame(int id)
         {
-            return View();
+            MyGame game = _gamesRepo.GetGameById(id);
+            return View(game);
         }
         
         [HttpPost]
-        public IActionResult UpdateGame(MyGame game,int id)
+        public IActionResult UpdateGame(MyGame game, int id)
         {
             if(id != null){
                 _gamesRepo.UpdateGame(game,id);

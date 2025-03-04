@@ -49,8 +49,8 @@ public class MySqlGameRepo : IGameRepo
                 {
                     Id = reader.GetInt32(0),
                     Title = reader.GetString(1),
-                    Genre = reader.GetString(2),
-                    Studio = reader.GetString(3),
+                    Studio = reader.GetString(2),
+                    Genre = reader.GetString(3),
                     Price = reader.GetDecimal(4)
                 }
             );
@@ -60,11 +60,32 @@ public class MySqlGameRepo : IGameRepo
         return games;
     }
 
+    public MyGame GetGameById(int id)
+    {
+        using var connection = new MySqlConnection(_connectionString);
+        MySqlCommand command = connection.CreateCommand();
+        command.CommandText = $"SELECT * FROM games WHERE id = {id}";
+        connection.Open();
+        var reader = command.ExecuteReader();
+        reader.Read();
+        var game = new MyGame()
+        {
+            Id = reader.GetInt32(0),
+            Title = reader.GetString(1),
+            Studio = reader.GetString(2),
+            Genre = reader.GetString(3),
+            Price = reader.GetDecimal(4)
+        };
+        
+        connection.Close();
+        return game;
+    }
+
     public void UpdateGame(MyGame game,int id)
     {
         using var connection = new MySqlConnection(_connectionString);
         MySqlCommand command = connection.CreateCommand();
-        command.CommandText = $"UPDATE `games` SET title='{game.Title}',studio='{game.Studio}',genre='{game.Genre}',price={game.Price} WHERE id = {{id}}";
+        command.CommandText = $"UPDATE `games` SET title='{game.Title}',studio='{game.Studio}',genre='{game.Genre}',price={game.Price.ToString().Replace(',','.')} WHERE id = {id}";
         connection.Open();
         command.ExecuteNonQuery();
         connection.Close();

@@ -3,22 +3,22 @@
 <form asp-action="AddGame" method="post">
     <div class="row m-2">
         <label class="col-3 text-end" asp-for="Title"></label>
-        <input type="text" asp-for="Title" class="col-6" />
+        <input type="text" asp-for="Title" class="col-6" id="title"/>
         <span asp-validation-for="Title" class="col-3 text-danger"></span>
     </div>
     <div class="row m-2">
         <label class="col-3 text-end" asp-for="Studio"></label>
-        <input type="text" asp-for="Studio" class="col-6" />
+        <input type="text" asp-for="Studio" class="col-6" id="studio"/>
         <span asp-validation-for="Studio" class="col-3 text-danger"></span>
     </div>
     <div class="row m-2">
         <label class="col-3 text-end" asp-for="Genre"></label>
-        <input type="text" asp-for="Genre" class="col-6" />
+        <input type="text" asp-for="Genre" class="col-6" id="genre"/>
         <span asp-validation-for="Genre" class="col-3 text-danger"></span>
     </div>
     <div class="row m-2">
         <label class="col-3 text-end" asp-for="Price"></label>
-        <input type="number" asp-for="Price" class="col-6" step="0.01"/>
+        <input type="number" asp-for="Price" class="col-6" step="0.01" id="price"/>
         <span asp-validation-for="Price" class="col-3 text-danger"></span>
     </div>
     <input type="submit" value="Dodaj" class="col-6 offset-3 btn btn-primary" />

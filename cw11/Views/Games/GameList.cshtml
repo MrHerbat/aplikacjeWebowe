@@ -5,6 +5,7 @@
     <tr>
         <th>Lp</th>
         <th>Tytuł</th>
+        <th>Studio</th>
         <th>Gatunek</th>
         <th>Cena</th>
         <th>Inne</th>
@@ -18,8 +19,8 @@
         <tr>
             <td>@lp</td>
             <td>@game.Title</td>
-            <td>@game.Genre</td>
             <td>@game.Studio</td>
+            <td>@game.Genre</td>
             <td>@game.Price</td>
             <td>
                 <a asp-action="Delete" asp-route-id="@game.Id" class="btn btn-danger">X</a>
