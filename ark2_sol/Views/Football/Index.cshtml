@@ -1,0 +1,12 @@
+@model List<ark2_sol.Models.Match>
+<section id="matches">
+        @{ int i = 0;}
+        @foreach (var r in Model)
+        {
+            <div>
+                <h3>@r.Team1 - @r.Team2 </h3><br>
+                <h4> @r.Score </h4><br>
+                w dniu: @r.Date <br>
+            </div>
+        }
+</section>

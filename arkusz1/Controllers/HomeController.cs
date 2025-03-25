@@ -37,9 +37,9 @@ namespace makarony.Controllers
 
         }
 
-        public IActionResult Result()
+        public IActionResult List()
         {
-            List<Reservation> reservations = _repo.GetAllReservations();
+            List<Reservation> reservations = _repo.GetAllResevations();
             return View(reservations);
         }
 
