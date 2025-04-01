@@ -2,7 +2,11 @@
     background-color:crimson;
     font-family:Tahoma, Geneva, Verdana, sans-serif;
 }
-
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
 header{
     color: white;
     text-align: center;
@@ -11,6 +15,7 @@ header{
 
 #matches{
     display:flex;
+    justify-content: center;
 }
 
 #matches div{
@@ -21,4 +26,24 @@ header{
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
+}
+#matches div:hover{
+    border: 1px solid white;
+}
+#main{
+    height: 50px;
+    background-color: whitesmoke;
+}
+#left{
+    height: 230px;
+    width: 70%;
+    float: left;
+    background-color: whitesmoke;
+}
+#right{
+    text-align: right;
+    height: 230px;
+    width: 30%;
+    float: left;
+    background-color: whitesmoke;
 }

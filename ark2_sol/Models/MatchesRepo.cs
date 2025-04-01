@@ -33,4 +33,14 @@ public class MatchesRepo
         conn.Close();
         return matches;
     }
+    public void SaveToDb(Match match)
+    {
+        using MySqlConnection conn = new MySqlConnection(_connString);
+        using MySqlCommand cmd = conn.CreateCommand();
+        cmd.CommandText = "INSERT INTO rozgrywki (zespol1,zespol2,wynik,data_rozgrywki) VALUES " +
+                          $"({match.Team1},{match.Team2},{match.Score},{match.Date})";
+        conn.Open();
+        cmd.ExecuteNonQuery();
+        conn.Close();
+    }
 }

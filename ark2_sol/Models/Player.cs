@@ -6,4 +6,5 @@ public class Player
     public int Pozycja_Id { get; set; }
     public string Imie { get; set; }
     public string Nazwisko { get; set; }
+    public string? Pozycja_Nazwa { get; set; }
 }

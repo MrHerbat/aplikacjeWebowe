@@ -1,12 +1,10 @@
-@using System.Text.RegularExpressions
-@using ark2_sol.Models
+﻿@using ark2_sol.Models
 @using Match = ark2_sol.Models.Match
 @model Int32
 @{
     ViewBag.Title = "Rozgrywki futbolowe";
     Layout = "_Layout";
     List<Match> matches = ViewBag.Matches;
-    List<Player> players = ViewBag.Players;
 }
 <section id="matches">
     @{ int i = 0;}
@@ -23,20 +21,7 @@
     <h2>Reprezentacja Polski</h2>
 </section>
 <section id="left">
-    <a asp-action="Index">Wszystie mecze</a>
-    <p>Podaj pozycję zawodników (1-bramkarze, 2-obrońcy, 3-pomocnicy, 4-napastnicy):</p>
-    <form method="post">
-        <input type="number" min="1" max="4" name="id">
-        <button type="submit">Sprawdź</button>
-    </form>
-    <ul>
-        @foreach (Player player in players)
-        {
-            <ol>
-                @player.Imie @player.Nazwisko
-            </ol>
-        }
-    </ul>
+    <a asp-action="Index">Strona główna</a>
 </section>
 <section id="right">
     <img src="Images/zad1.png" alt="">
